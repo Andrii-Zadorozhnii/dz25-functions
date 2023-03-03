@@ -3,6 +3,11 @@ body{
     padding: 20px;
 }
 
+input, button{
+    padding: 5px;
+    height: 40px;
+}
+
 .bold{
     font-weight: 700;
     font-size: large;
@@ -17,6 +22,19 @@ body{
 
 .border{
     border: 1px solid gray;
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 10px;
+    background: black;
+    color: #fff;
 }
+
+.border:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+/* 2 */
+.excersize-two__arguments{
+    height: 40px;
+}
+
