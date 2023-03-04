@@ -82,8 +82,8 @@ let excersSixButton = document.querySelector(".excersize-six__button");
 let excersSixUnswer = document.querySelector(".excersize-six__unswer");
 
 excersSixButton.onclick = function () {
-    console.log(typeof(heightSize.value));
-    console.log(typeof(widthSize.value));
+    console.log(typeof (heightSize.value));
+    console.log(typeof (widthSize.value));
     if (parseInt(heightSize.value) > 0 && parseInt(widthSize.value) > 0) {
         let square = parseInt(widthSize.value) * parseInt(heightSize.value);
         excersSixUnswer.innerHTML = square;
@@ -100,3 +100,30 @@ excersSixButton.onclick = function () {
         excersSixUnswer.innerHTML = "please enter valid input";
     }
 }
+
+// //_____7______
+// let excersSevenInputNumber = document.querySelector(".excersize-seven__input");
+// let excersSevenButton = document.querySelector(".excersize-seven__button");
+// let excersSevenUnswer = document.querySelector(".excersize-seven__unswer");
+
+// excersSevenButton.onclick = function () {
+//     function numIsPerfect(excersSevenInputNumber) {
+//         console.log("hello");
+//         num = parseInt(excersSevenInputNumber.value);
+//         let sum = 0;
+//         for (i = 1; i < num; i++) {
+//             if (num % i == 0) {
+//                 sum += i;
+//             }
+//         }
+    
+//         if (sum === num && sum!== 0) {
+//             excersSevenUnswer.innerHTML = (`Число ${num} є досконалим числом`);
+//             return console.log(`Число ${num} є досконалим числом`);
+//         } else {
+//             excersSevenUnswer.innerHTML = (`Число ${num} не є досконалим числом`);
+//             return console.log(`Число ${num} не є досконалим числом`);
+//         };
+//     }
+// }
+
