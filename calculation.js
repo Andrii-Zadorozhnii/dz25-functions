@@ -1,13 +1,20 @@
 let inputArgumentsList = [];
 
-let addNumbersToListButton = document.querySelector(
-    ".excersize-two__button-add"
-);
-let calculateItemsButton = document.querySelector(
-    ".excersize-two__button-calculate"
-);
+let addNumbersToListButton = document.querySelector(".excersize-two__button-add");
+let calculateItemsButton = document.querySelector(".excersize-two__button-calculate");
 let inputArgument = document.querySelector(".excersize-two__argument");
+let exersizeTwoUnswer = document.querySelector(".excersize-two__unswer");
 
+addNumbersToListButton.onclick = function() {
+    inputArgumentsList.push(inputArgument.value);
+    console.log("add argument");
+    console.log(inputArgumentsList);
+}
+
+calculateItemsButton.onclick = function() {
+    exersizeTwoUnswer.innerHTML = `Total arguments is : ${inputArgumentsList.length}`;
+    console.log(inputArgumentsList.length);
+}
 
 
 // _____3______
