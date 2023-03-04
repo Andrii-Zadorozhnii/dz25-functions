@@ -84,7 +84,7 @@ select {
   }
 }
 
-li:hover {
+button:hover {
   cursor: grab;
 }
 
